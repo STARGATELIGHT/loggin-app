@@ -1,0 +1,14 @@
+pipeline{
+
+    agent  any
+
+    stages{
+
+        stage('Continues Download'){
+
+            steps{
+                git branch: 'main', url: 'https://github.com/STARGATELIGHT/loggin-app.git'
+            }
+        }
+    }
+}
